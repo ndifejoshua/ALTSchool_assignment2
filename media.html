@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2.2- Media Elements</title>
+  </head>
+  <body>
+    <h2>Profile Picture</h2>
+    <picture>
+      <source
+        srcset="./assets/img/headshot_laptops.jpg"
+        media="(min-width: 1200px)"
+      />
+
+      <source
+        srcset="./assets/img/headshot_tablets(landscape).jpg"
+        media="(min-width: 900px)"
+      />
+
+      <source
+        srcset="./assets/img/headshot_tablets.jpg"
+        media="(min-width: 600px)"
+      />
+      <source
+        srcset="./assets/img/headshot_mobile.jpg"
+        media="(max-width: 599px)"
+      />
+      <img
+        src="./assets/img/Headshot (Ndife).jpg"
+        alt="Joshua Chukwuebuka Ndife's headshot."
+        width="500"
+        height="auto"
+      />
+    </picture>
+
+    <h2>Audio Introduction</h2>
+    <audio src="./assets/audio/Audio introduction(Ndife).wav" controls>
+      Your browser does not support the audio element.
+    </audio>
+
+    <h2>Video Introduction</h2>
+    <video controls width="500" src="./assets/video/video_introduction.mp4  ">
+      Your browser does not support the video tag.
+    </video>
+
+    <p><a href="index.html">Go Back to Home</a></p>
+  </body>
+</html>
