@@ -3,48 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment 2.2- Media Elements</title>
+    <title>Assignment 2.2 - Media Elements</title>
   </head>
   <body>
     <h2>Profile Picture</h2>
     <picture>
-      <source
-        srcset="./assets/img/headshot_laptops.jpg"
-        media="(min-width: 1200px)"
-      />
-
-      <source
-        srcset="./assets/img/headshot_tablets(landscape).jpg"
-        media="(min-width: 900px)"
-      />
-
-      <source
-        srcset="./assets/img/headshot_tablets.jpg"
-        media="(min-width: 600px)"
-      />
-      <source
-        srcset="./assets/img/headshot_mobile.jpg"
-        media="(max-width: 599px)"
-      />
-      <img
-        src="./assets/img/Headshot (Ndife).jpg"
-        alt="Joshua Chukwuebuka Ndife's headshot."
-        width="500"
-        height="auto"
-      />
+      <!-- Image sources for different screen sizes (laptops, tablets, mobile) -->
+      <source srcset="./assets/img/headshot_laptops.jpg" media="(min-width: 1200px)" />
+      <source srcset="./assets/img/headshot_tablets(landscape).jpg" media="(min-width: 900px)" />
+      <source srcset="./assets/img/headshot_tablets.jpg" media="(min-width: 600px)" />
+      <source srcset="./assets/img/headshot_mobile.jpg" media="(max-width: 599px)" />
+      <!-- Fallback image for browsers that do not support picture element -->
+      <img src="./assets/img/Headshot (Ndife).jpg" alt="Joshua Chukwuebuka Ndife's headshot" width="500" height="auto" />
     </picture>
 
+    <!-- Audio Section -->
     <h2>Audio Introduction</h2>
     <audio src="./assets/audio/Audio introduction(Ndife).wav" controls>
+      <!-- Fallback message for browsers that do not support audio -->
       Your browser does not support the audio element.
     </audio>
 
+    <!-- Video Section -->
     <h2>Video Introduction</h2>
-    <video controls width="500" src="./assets/video/video_introduction.mp4  ">
+    <video controls width="500" src="./assets/video/video_introduction.mp4">
+      <!-- Fallback message for browsers that do not support video -->
       Your browser does not support the video tag.
     </video>
 
-    <p> <a href="table.html">Go to Table Page</a></p>
-     <p><a href="https://ndifejoshua.github.io/ALTSchool_assignment1/index.html" target="_blank">Back to Homepage</a></p>
+    <p><a href="table.html">Go to Table Page</a></p>
+    <p><a href="/.index.html">Back to Home</a></p>
+<!--     External link to asssignment1 -->
+    <p><a href="https://ndifejoshua.github.io/ALTSchool_assignment1/index.html" target="_blank">Go to Assignment1</a></p>
   </body>
 </html>
